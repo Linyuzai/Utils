@@ -6,6 +6,7 @@ import java.io.UnsupportedEncodingException;
  * Created by Administrator on 2016/6/18 0018.
  */
 public class XCharset {
+    public static final String TAG = "XCharset";
     /**
      * 7位ASCII字符，也叫作ISO646-US、Unicode字符集的基本拉丁块
      */

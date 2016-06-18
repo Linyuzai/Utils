@@ -7,6 +7,7 @@ import java.io.IOException;
  * Created by Administrator on 2016/6/18 0018.
  */
 public class XFile {
+    public static final String TAG = "XFile";
 
     private XFile() {
     }

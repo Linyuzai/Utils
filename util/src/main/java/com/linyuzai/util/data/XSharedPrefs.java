@@ -9,6 +9,7 @@ import com.linyuzai.util.App;
  * Created by Administrator on 2016/6/19 0019.
  */
 public class XSharedPrefs {
+    public static final String TAG = "XSharedPrefs";
     public static final String DEFAULT_NAME = "shared_prefs";
     public static final String DEFAULT_STRING_VALUE = "0";
     public static final int DEFAULT_INT_VALUE = 0;

@@ -8,6 +8,7 @@ import java.io.File;
  * Created by Administrator on 2016/6/18 0018.
  */
 public class XSdcard {
+    public static final String TAG = "XSdcard";
     private static final File root = Environment.getExternalStorageDirectory();
     private static final String directory = "linyuzai";
 

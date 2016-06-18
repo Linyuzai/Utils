@@ -12,10 +12,9 @@ import java.util.Properties;
  * Created by Administrator on 2016/6/18 0018.
  */
 public class XProperties extends Properties {
-
+    public static final String TAG = "XProperties";
     private static final String DEFAULT_PATH = XSdcard.getDirectoryPath();
     private static final String DEFAULT_NAME = "xproperties.properties";
-
     private String path;
 
     private XProperties(String path) {
