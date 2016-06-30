@@ -10,15 +10,15 @@ public class XViewHolder {
     public static final String TAG = "XViewHolder";
 
     public static <T extends View> T get(View view, int id) {
-        SparseArray<View> viewHolder = (SparseArray<View>) view.getTag();
-        if (viewHolder == null) {
-            viewHolder = new SparseArray<>();
-            view.setTag(viewHolder);
+        SparseArray<View> holder = (SparseArray<View>) view.getTag();
+        if (holder == null) {
+            holder = new SparseArray<>();
+            view.setTag(holder);
         }
-        View childView = viewHolder.get(id);
+        View childView = holder.get(id);
         if (childView == null) {
             childView = view.findViewById(id);
-            viewHolder.put(id, childView);
+            holder.put(id, childView);
         }
         return (T) childView;
     }

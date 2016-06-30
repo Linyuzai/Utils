@@ -16,4 +16,10 @@ public class App {
     public static Context getContext() {
         return context;
     }
+
+    public static Context checkNull(Context context) {
+        if (context == null)
+            throw new NullPointerException("you need use App.bind() before use this constructor");
+        return context;
+    }
 }

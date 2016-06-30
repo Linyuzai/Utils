@@ -32,7 +32,8 @@ public class XProperties extends Properties {
 
     public static XProperties getInstance(String path, String name) {
         {
-            File file = XFile.create(path, name);
+            File file = new XFile(path, name).create();
+            //   File file = XFile.create(path, name);
             XProperties pro = new XProperties(path + "/" + name);
             try {
                 InputStream is = new FileInputStream(file);

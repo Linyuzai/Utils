@@ -22,8 +22,13 @@ public class XSharedPrefs {
 
     private static XSharedPrefs instance = null;
 
+    /**
+     * you need App.bind() before
+     *
+     * @return
+     */
     public static XSharedPrefs getInstance() {
-        return getInstance(App.getContext());
+        return getInstance(App.checkNull(App.getContext()));
     }
 
     public static XSharedPrefs getInstance(Context context) {
